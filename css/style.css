@@ -1,0 +1,141 @@
+/*Importing components*/
+@import url("components/buttons.css");
+@import url("components/cards.css");
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Lustria:400|Lato:400,700');
+
+/* Fontawesome */
+@import url('https://use.fontawesome.com/releases/v5.12.1/css/all.css');
+
+:root {
+  --color-primary: #046865;
+  --color-primary--light: #AAFCB8;
+  --color-secondary: #A13D63;
+  --color-secondary--light: #F7A278;
+  --color-grey--dark: #333;
+  --color-grey: #999;
+  --color-grey--light: #ccc;
+}
+
+/* Utilities */
+body {
+  margin: 0;
+  font-family: Open Sans;
+  color: var(--color-grey--dark);
+  font-family: Lato;
+  padding: 0;
+  font-size: 18px;
+}
+
+h1, h2, h3, h4 {
+  font-family: Poppins;
+  color: var(--color-secondary);
+  font-family: Lustria, serif;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 24px;
+  color: var(--color-primary);
+}
+
+a {
+  text-decoration: none;
+}
+
+.text--centered {
+  text-align: center;
+}
+
+/* Custom design below! */
+
+/*Header*/
+
+header {
+  background-image: url(https://images.unsplash.com/photo-1548957175-84f0f9af659e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2561&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 80vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 200px;
+}
+
+header h1 {
+  color: var(--color-primary);
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+header p {
+  font-size: 26px;
+  margin: 0 0 15px;
+  color: var(--color-primary);
+}
+
+@media (max-width: 670px) {
+  header {
+    height: 60vh;
+  }
+
+  header h1 {
+    font-size: 34px;
+  }
+
+  header p {
+    font-size: 20px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+}
+
+/*Content*/
+
+.container {
+  width: 70%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+@media (max-width: 670px) {
+  .container {
+    width: 85%;
+  }
+}
+
+
+/*Footer*/
+
+footer {
+  background-color: var(--color-secondary--light);
+  padding: 60px;
+  color: #fff;
+  margin-top: 60px;
+}
+
+.social-icons i {
+  font-size: 30px;
+  color: #fff;
+  transition: all .3s;
+  padding: 0 10px;
+}
+
+.social-icons i:hover,
+.fa-heart {
+  color: var(--color-secondary);
+}
